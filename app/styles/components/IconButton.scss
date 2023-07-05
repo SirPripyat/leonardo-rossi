@@ -1,0 +1,28 @@
+@use "../variables/colors.scss";
+@use "../mixins/mixinIconButton.scss";
+
+.icon-ghosted {
+  @include mixinIconButton.iconButton;
+
+  svg {
+    color: colors.$grayscale-color-250;
+    width: 2.4rem;
+    height: 2.4rem;
+
+    line {
+      color: colors.$grayscale-color-250;
+    }
+
+    &:hover * {
+      color: colors.$branding-color-200;
+    }
+  }
+
+  &:disabled {
+    @include mixinIconButton.iconButtonDisabled;
+  }
+
+  &:disabled svg line {
+    @include mixinIconButton.iconButtonDisabled;
+  }
+}

@@ -1,0 +1,167 @@
+@use "../variables/colors.scss";
+@use "../variables/borderRadius.scss";
+@use "../variables/fonts.scss";
+@use "../variables/breakpoints.scss";
+
+// H1
+
+@mixin H1-FontWeigth {
+  font-weight: fonts.$h1-font-weight;
+}
+
+@mixin H1-Large {
+  font-size: fonts.$h1-large-font-size;
+  line-height: fonts.$h1-large-line-height;
+
+  @include H1-FontWeigth();
+}
+
+@mixin H1-Medium {
+  font-size: fonts.$h1-medium-font-size;
+  line-height: fonts.$h1-medium-line-height;
+  @include H1-FontWeigth();
+}
+
+@mixin H1-Small {
+  font-size: fonts.$h1-small-font-size;
+  line-height: fonts.$h1-small-line-height;
+  @include H1-FontWeigth();
+}
+
+// H2
+
+@mixin H2-FontWeigth {
+  font-weight: fonts.$h2-font-weight;
+}
+
+@mixin H2-Large {
+  font-size: fonts.$h2-large-font-size;
+  line-height: fonts.$h2-large-line-height;
+
+  @include H2-FontWeigth();
+}
+
+@mixin H2-Medium {
+  font-size: fonts.$h2-medium-font-size;
+  line-height: fonts.$h2-medium-line-height;
+  @include H2-FontWeigth();
+}
+
+@mixin H2-Small {
+  font-size: fonts.$h2-small-font-size;
+  line-height: fonts.$h2-small-line-height;
+  @include H2-FontWeigth();
+}
+
+// H3
+
+@mixin H3-FontWeigth {
+  font-weight: fonts.$h3-font-weight;
+}
+
+@mixin H3-Large {
+  font-size: fonts.$h3-large-font-size;
+  line-height: fonts.$h3-large-line-height;
+
+  @include H3-FontWeigth();
+}
+
+@mixin H3-Medium {
+  font-size: fonts.$h3-medium-font-size;
+  line-height: fonts.$h3-medium-line-height;
+  @include H3-FontWeigth();
+}
+
+@mixin H3-Small {
+  font-size: fonts.$h3-small-font-size;
+  line-height: fonts.$h3-small-line-height;
+  @include H3-FontWeigth();
+}
+
+// H4
+
+@mixin H4-FontWeigth {
+  font-weight: fonts.$h4-font-weight;
+}
+
+@mixin H4-Large {
+  font-size: fonts.$h4-large-font-size;
+  line-height: fonts.$h4-large-line-height;
+
+  @include H4-FontWeigth();
+}
+
+@mixin H4-Medium {
+  font-size: fonts.$h4-medium-font-size;
+  line-height: fonts.$h4-medium-line-height;
+  @include H4-FontWeigth();
+}
+
+@mixin H4-Small {
+  font-size: fonts.$h4-small-font-size;
+  line-height: fonts.$h4-small-line-height;
+  @include H4-FontWeigth();
+}
+
+// P
+
+@mixin P-FontWeigth {
+  font-weight: fonts.$p-font-weight;
+}
+
+@mixin P-Large {
+  font-size: fonts.$p-large-font-size;
+  line-height: fonts.$p-large-line-height;
+
+  @include P-FontWeigth();
+}
+
+@mixin P-Medium {
+  font-size: fonts.$p-medium-font-size;
+  line-height: fonts.$p-medium-line-height;
+  @include P-FontWeigth();
+}
+
+@mixin P-Small {
+  font-size: fonts.$p-small-font-size;
+  line-height: fonts.$p-small-line-height;
+  @include H4-FontWeigth();
+}
+
+// Button
+
+@mixin Button-FontWeigth {
+  font-weight: fonts.$button-font-weight;
+}
+
+@mixin Button {
+  font-size: fonts.$button-font-size;
+  line-height: fonts.$button-line-height;
+
+  @include Button-FontWeigth();
+}
+
+// Text Small
+
+@mixin TextSmall-FontWeigth {
+  font-weight: fonts.$text-small-font-weight;
+}
+
+@mixin TextSmall-Large {
+  font-size: fonts.$text-small-large-font-size;
+  line-height: fonts.$text-small-large-line-height;
+
+  @include TextSmall-FontWeigth();
+}
+
+@mixin TextSmall-Medium {
+  font-size: fonts.$text-small-medium-font-size;
+  line-height: fonts.$text-small-medium-line-height;
+  @include TextSmall-FontWeigth();
+}
+
+@mixin TextSmall-Small {
+  font-size: fonts.$text-small-small-font-size;
+  line-height: fonts.$text-small-small-line-height;
+  @include H4-FontWeigth();
+}

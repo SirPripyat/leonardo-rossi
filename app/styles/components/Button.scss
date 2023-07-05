@@ -1,0 +1,75 @@
+@use "../variables/colors.scss";
+@use "../variables/shadows.scss";
+@use "../variables/spacings.scss";
+@use "../mixins/mixinButton.scss";
+@use "../mixins/mixinFonts.scss";
+@use "../variables/breakpoints.scss";
+
+.reset-button {
+  background-color: transparent;
+  border: none;
+}
+
+.universal-button {
+  @include mixinButton.button;
+
+  button {
+    background-color: transparent;
+    border: none;
+
+    @include mixinFonts.Button;
+  }
+}
+
+.button-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.filled {
+  background-color: colors.$branding-color-100;
+
+  color: colors.$grayscale-color-00;
+
+  * {
+    color: inherit;
+  }
+
+  &:hover {
+    background-color: colors.$branding-color-200;
+
+    box-shadow: shadows.$shadow-xs;
+  }
+}
+
+.outlined {
+  background-color: transparent;
+
+  color: colors.$branding-color-100;
+
+  border: 0.1rem solid colors.$branding-color-100;
+
+  * {
+    color: inherit;
+  }
+
+  &:hover {
+    color: colors.$branding-color-200;
+
+    border: 0.1rem solid colors.$branding-color-200;
+  }
+}
+
+.ghosted {
+  background-color: transparent;
+
+  color: colors.$grayscale-color-250;
+
+  * {
+    color: inherit;
+  }
+
+  &:hover {
+    color: colors.$branding-color-200;
+  }
+}

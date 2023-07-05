@@ -1,0 +1,8 @@
+@use "../variables/colors.scss";
+@use "../variables/breakpoints.scss";
+
+.main-projects__title {
+  color: colors.$branding-color-250;
+
+  text-align: center;
+}

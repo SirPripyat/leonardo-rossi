@@ -1,0 +1,87 @@
+@use "./breakpoints.scss";
+$main-font: "Poppins";
+
+// H1
+
+$h1-font-weight: 800;
+
+$h1-large-font-size: 4.4rem;
+$h1-large-line-height: 6.2rem;
+
+$h1-medium-font-size: 4.2rem;
+$h1-medium-line-height: 5rem;
+
+$h1-small-font-size: 4rem;
+$h1-small-line-height: 4.8rem;
+
+// H2
+
+$h2-font-weight: 800;
+
+$h2-large-font-size: 3.6rem;
+$h2-large-line-height: 5.4rem;
+
+$h2-medium-font-size: 3.4rem;
+$h2-medium-line-height: 5.1rem;
+
+$h2-small-font-size: 3.2rem;
+$h2-small-line-height: 4rem;
+
+// H3
+
+$h3-font-weight: 800;
+
+$h3-large-font-size: 2.4rem;
+$h3-large-line-height: 3.6rem;
+
+$h3-medium-font-size: 2.2rem;
+$h3-medium-line-height: 3.1rem;
+
+$h3-small-font-size: 2rem;
+$h3-small-line-height: 3rem;
+
+// H4
+
+$h4-font-weight: 400;
+
+$h4-large-font-size: 2.2rem;
+$h4-large-line-height: 3.3rem;
+
+$h4-medium-font-size: 2rem;
+$h4-medium-line-height: 3rem;
+
+$h4-small-font-size: 1.8rem;
+$h4-small-line-height: 2.7rem;
+
+// P
+
+$p-font-weight: 400;
+
+$p-large-font-size: 2rem;
+$p-large-line-height: 3rem;
+
+$p-medium-font-size: 1.8rem;
+$p-medium-line-height: 2.7rem;
+
+$p-small-font-size: 1.6rem;
+$p-small-line-height: 2.4rem;
+
+// Button
+
+$button-font-weight: 700;
+
+$button-font-size: 1.6rem;
+$button-line-height: 2.4rem;
+
+// Text Small
+
+$text-small-font-weight: 300;
+
+$text-small-large-font-size: 1.4rem;
+$text-small-large-line-height: 2.1rem;
+
+$text-small-medium-font-size: 1.3rem;
+$text-small-medium-line-height: 1.9rem;
+
+$text-small-small-font-size: 1.2rem;
+$text-small-small-line-height: 1.8rem;

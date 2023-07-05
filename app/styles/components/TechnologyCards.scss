@@ -1,0 +1,42 @@
+@use "../variables/colors.scss";
+@use "../variables/borderRadius.scss";
+@use "../variables/breakpoints.scss";
+@use "../mixins/mixinDisplayFlex.scss";
+@use "../variables/spacings.scss";
+
+.technology-cards {
+  @include mixinDisplayFlex.columnCenterCenter;
+  row-gap: spacings.$spacing-sm;
+
+  width: calc((100% / 2) - (1.6rem / 2));
+
+  .thumbnail {
+    @include mixinDisplayFlex.columnCenterCenter;
+
+    width: 100%;
+
+    background-color: colors.$background-color-50;
+
+    padding: 2.4rem 0;
+
+    border: 0.1rem solid colors.$background-color-50;
+
+    border-radius: borderRadius.$border-radius-sm;
+
+    img {
+      width: 40%;
+    }
+  }
+
+  &:hover {
+    .thumbnail {
+      border: 0.1rem solid colors.$branding-color-00;
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-lg) {
+  .technology-cards {
+    width: calc((100% / 5) - ((1.6rem * 3) / 5));
+  }
+}

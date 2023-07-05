@@ -1,0 +1,21 @@
+@use "../variables/colors.scss";
+@use "../variables/borderRadius.scss";
+@use "./mixinDisplayFlex.scss";
+
+@mixin iconButton {
+  @include mixinDisplayFlex.rowCenterCenter;
+
+  background-color: transparent;
+
+  border: none;
+  border-radius: borderRadius.$border-radius-xl;
+
+  padding: 0.4rem;
+
+  cursor: pointer;
+}
+
+@mixin iconButtonDisabled {
+  color: colors.$transparent-color-100;
+  cursor: not-allowed;
+}

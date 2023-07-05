@@ -1,0 +1,54 @@
+@use "../variables/colors.scss";
+@use "../variables/spacings.scss";
+@use "../mixins/mixinFonts.scss";
+@use "../variables/breakpoints.scss";
+@use "../mixins/mixinDisplayFlex.scss";
+
+.top-app-bar {
+  background-color: colors.$background-color-00;
+
+  width: 100%;
+
+  padding: 0.8rem 1.6rem;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: spacings.$spacing-md;
+
+  border-bottom: 0.1rem solid colors.$branding-color-00;
+
+  position: fixed;
+  z-index: 2;
+
+  i {
+    @include mixinDisplayFlex.rowCenterCenter;
+  }
+}
+
+.top-app-bar__logo {
+  @include mixinDisplayFlex.columnCenterCenter;
+
+  img {
+    width: 100%;
+  }
+}
+
+.top-app-bar__anchors {
+  display: none;
+}
+
+@media (min-width: breakpoints.$breakpoint-lg) {
+  .top-app-bar {
+    justify-content: space-between;
+
+    i {
+      display: none;
+    }
+  }
+
+  .top-app-bar__anchors {
+    @include mixinDisplayFlex.rowCenterCenter;
+    column-gap: spacings.$spacing-sm;
+  }
+}
