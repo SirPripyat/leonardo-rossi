@@ -36,7 +36,7 @@ img {
   @include mixinDisplayFlex.columnCenterCenter;
   row-gap: spacings.$spacing-sm;
 
-  width: inherit;
+  width: 100%;
 }
 
 @media (min-width: breakpoints.$breakpoint-lg) {
