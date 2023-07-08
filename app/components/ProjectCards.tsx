@@ -44,7 +44,7 @@ export function ProjectCards({
             targetValue={"_blank"}
           >
             <Button.Icon icon={RxGithubLogo} />
-            Ver Projeto
+            Ver GitHub
           </Button.Root>
         </div>
       </div>
