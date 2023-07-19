@@ -5,7 +5,7 @@ export interface ButtonRootProps {
   children: React.ReactNode;
   clickAction?: () => void;
   variant?: string;
-  link: string;
+  link?: string;
   targetValue?: string;
 }
 

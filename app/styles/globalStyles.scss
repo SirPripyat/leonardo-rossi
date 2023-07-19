@@ -17,6 +17,20 @@
   color: colors.$grayscale-color-250;
 }
 
+::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background: colors.$grayscale-color-00;
+}
+
+::-webkit-scrollbar-thumb {
+  background: colors.$grayscale-color-50;
+
+  border-radius: 10rem;
+}
+
 body {
   background-color: colors.$background-color-00;
 }

@@ -7,6 +7,8 @@ import nodejsLogo from "../assets/nodejs-logo.svg";
 import reactjsLogo from "../assets/reactjs-logo.svg";
 import mongodbLogo from "../assets/mongodb-logo.svg";
 import expressjsLogo from "../assets/expressjs-logo.svg";
+import tailwindCSS from "../assets/tailwindCSS.svg";
+import sassLogo from "../assets/sass.svg";
 import { TechnologyCards } from "./TechnologyCards";
 
 export function TechnologySection() {
@@ -16,6 +18,8 @@ export function TechnologySection() {
       <div className="technology-section__cards-area">
         <TechnologyCards techText={"HTML 5"} techImage={htmlLogo} />
         <TechnologyCards techText={"CSS 3"} techImage={cssLogo} />
+        <TechnologyCards techText={"SASS"} techImage={sassLogo} />
+        <TechnologyCards techText={"Tailwind CSS"} techImage={tailwindCSS} />
         <TechnologyCards techText={"JavaScript"} techImage={javascriptLogo} />
         <TechnologyCards techText={"TypeScript"} techImage={typescriptLogo} />
         <TechnologyCards techText={"Node JS"} techImage={nodejsLogo} />

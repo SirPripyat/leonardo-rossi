@@ -9,9 +9,11 @@ import { Button } from "./Button";
 import { Home, Menu } from "lucide-react";
 import { IconButton } from "./IconButton";
 import { MenuMobile } from "./MenuMobile";
+import { useRouter } from "next/navigation";
 
 export function TopAppBar() {
   const [openMenuMobile, setOpenMenuMobile] = useState(false);
+  const router = useRouter();
 
   return (
     <header className="top-app-bar">
