@@ -3,6 +3,7 @@ import { TopAppBar } from "./components/TopAppBar/TopAppBar";
 import "./styles/globalStyles.scss";
 import { Poppins } from "next/font/google";
 import { Metadata } from "next";
+import { MenuMobile } from "./components/MenuMobile/MenuMobile";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={poppins.className}>
         <TopAppBar />
+        <MenuMobile />
         {children}
         <Footer />
       </body>

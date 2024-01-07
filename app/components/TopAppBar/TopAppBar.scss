@@ -12,7 +12,6 @@
   padding: 0.8rem 1.6rem;
 
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   column-gap: spacings.$spacing-md;
 
@@ -49,6 +48,6 @@
 
   .top-app-bar__anchors {
     @include mixinDisplayFlex.rowCenterCenter;
-    column-gap: spacings.$spacing-sm;
+    column-gap: spacings.$spacing-xs;
   }
 }
