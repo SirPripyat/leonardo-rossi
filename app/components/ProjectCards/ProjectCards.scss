@@ -1,0 +1,83 @@
+@use "../../styles/variables/borderRadius.scss";
+@use "../../styles/variables/breakpoints.scss";
+@use "../../styles/variables/colors.scss";
+@use "../../styles/variables/spacings.scss";
+@use "../../styles/mixins/mixinDisplayFlex.scss";
+
+.project-cards {
+  @include mixinDisplayFlex.columnCenterCenter;
+  row-gap: spacings.$spacing-md;
+
+  width: 100%;
+}
+
+.project-cards__thumbnail {
+  @include mixinDisplayFlex.columnCenterCenter;
+
+  width: 100%;
+
+  background-color: colors.$background-color-50;
+
+  border-radius: borderRadius.$border-radius-sm;
+
+  img {
+    height: 50%;
+  }
+}
+
+.project-cards__information {
+  @include mixinDisplayFlex.columnCenterCenter;
+  row-gap: spacings.$spacing-md;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: spacings.$spacing-sm;
+}
+
+.information__buttons-area {
+  width: 100%;
+
+  @include mixinDisplayFlex.columnCenterCenter;
+  row-gap: spacings.$spacing-sm;
+}
+
+@media (min-width: breakpoints.$breakpoint-sm) {
+  .information__buttons-area {
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: spacings.$spacing-sm;
+
+    width: fit-content;
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-lg) {
+  .project-cards {
+    @include mixinDisplayFlex.rowCenterCenter;
+    column-gap: spacings.$spacing-md;
+
+    height: 20rem;
+    max-height: 35rem;
+  }
+
+  .project-cards__thumbnail {
+    width: 35%;
+    height: 100%;
+
+    img {
+      width: 70%;
+      height: auto;
+    }
+  }
+
+  .project-cards__information {
+    align-items: flex-start;
+
+    width: 50%;
+    height: 100%;
+  }
+}

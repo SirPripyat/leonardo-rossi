@@ -1,5 +1,5 @@
 import { ElementType } from "react";
-import "../../styles/components/Button.scss";
+import "./Button.scss";
 
 export interface ButtonIconProps {
   icon: ElementType;

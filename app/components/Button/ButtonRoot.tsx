@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "../../styles/components/Button.scss";
+import "./Button.scss";
 
 export interface ButtonRootProps {
   children: React.ReactNode;

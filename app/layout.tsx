@@ -1,5 +1,5 @@
-import Footer from "./components/Footer";
-import { TopAppBar } from "./components/TopAppBar";
+import Footer from "./components/Footer/Footer";
+import { TopAppBar } from "./components/TopAppBar/TopAppBar";
 import "./styles/globalStyles.scss";
 import { Poppins } from "next/font/google";
 import { Metadata } from "next";

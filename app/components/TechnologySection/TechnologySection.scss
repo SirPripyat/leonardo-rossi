@@ -1,0 +1,15 @@
+@use "../../styles/variables/colors.scss";
+@use "../../styles/variables/spacings.scss";
+@use "../../styles/mixins/mixinDisplayFlex.scss";
+
+.technology-section__title {
+  color: colors.$branding-color-250;
+}
+
+.technology-section__cards-area {
+  @include mixinDisplayFlex.rowCenterCenter;
+  flex-wrap: wrap;
+  gap: spacings.$spacing-sm;
+
+  width: 100%;
+}

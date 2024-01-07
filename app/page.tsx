@@ -1,8 +1,8 @@
-import { AboutMe } from "./components/AboutMe";
-import { Contacts } from "./components/Contacts";
-import { MainBanner } from "./components/MainBanner";
-import { MainProjects } from "./components/MainProjects";
-import { TechnologySection } from "./components/TechnologySection";
+import { AboutMe } from "./components/AboutMe/AboutMe";
+import { Contacts } from "./components/Contacts/Contacts";
+import { MainBanner } from "./components/MainBanner/MainBanner";
+import { MainProjects } from "./components/MainProjects/MainProjects";
+import { TechnologySection } from "./components/TechnologySection/TechnologySection";
 
 export default function Home() {
   return (

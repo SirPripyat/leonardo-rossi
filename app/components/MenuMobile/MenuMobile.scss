@@ -1,0 +1,29 @@
+@use "../../styles/variables/colors.scss";
+@use "../../styles/variables/breakpoints.scss";
+@use "../../styles/variables/spacings.scss";
+@use "../../styles/mixins/mixinDisplayFlex.scss";
+
+.menu-mobile {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: colors.$transparent-color-150;
+
+  top: 0;
+  left: 0;
+  position: fixed;
+
+  @include mixinDisplayFlex.columnCenterCenter;
+  row-gap: spacings.$spacing-xl;
+
+  div {
+    @include mixinDisplayFlex.columnCenterCenter;
+    row-gap: spacings.$spacing-md;
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-lg) {
+  .menu-mobile {
+    display: none;
+  }
+}
