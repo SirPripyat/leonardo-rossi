@@ -1,12 +1,19 @@
+"use client";
+
 import "./Contacts.scss";
 import { ContactCards } from "../ContactCards/ContactCards";
 import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 import { BiLogoGmail } from "react-icons/bi";
+import useToggleContactsText from "./useToggleContactsText";
 
 export function Contacts() {
+  const {
+    contactsText: { title },
+  } = useToggleContactsText();
+
   return (
     <section id="contacts">
-      <h1 className="contacts__title">Contatos</h1>
+      <h1 className="contacts__title">{title}</h1>
       <div className="contacts__card-area">
         <ContactCards
           contactName={"Linkedin"}

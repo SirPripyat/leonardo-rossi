@@ -1,10 +1,16 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
+"use client";
+
 import leonardoRossiProfilePicture from "../../assets/profilePicture.png";
 import Image from "next/image";
 import { Button } from "../Button";
 import "./MainBanner.scss";
+import useToggleBannerText from "./useToggleBannerText";
 
 export function MainBanner() {
+  const {
+    bannerText: { apresentation, name, profession },
+  } = useToggleBannerText();
+
   return (
     <section className="main-banner">
       <Image
@@ -13,9 +19,9 @@ export function MainBanner() {
       />
       <div className="main-banner__apresentation">
         <div className="apresentation">
-          <p>Olá, eu sou o</p>
-          <h1>{"<Leonardo Rossi/>"}</h1>
-          <p className="comment-subtitle">// Desenvolvedor FullStack</p>
+          <p>{apresentation}</p>
+          <h1>{name}</h1>
+          <p className="comment-subtitle">{profession}</p>
         </div>
         <div className="buttons-area">
           <Button.Root

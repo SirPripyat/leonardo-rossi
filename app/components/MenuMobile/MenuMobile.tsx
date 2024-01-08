@@ -5,43 +5,29 @@ import "./MenuMobile.scss";
 import { IconButton } from "../IconButton/IconButton";
 import { Button } from "../Button";
 import { useMenuMobileStore } from "@/app/store/menuMobile";
+import useToggleMenuMobileText from "./useToggleMenuMobileText";
 
 export function MenuMobile() {
   const { menuMobileIsOpen, toggleMenuMobile } = useMenuMobileStore();
+
+  const { menuMobileText } = useToggleMenuMobileText();
 
   return (
     menuMobileIsOpen && (
       <div className="menu-mobile">
         <IconButton icon={X} clickAction={toggleMenuMobile} />
         <div>
-          <Button.Root
-            variant={"Ghosted"}
-            clickAction={toggleMenuMobile}
-            link={"#aboutMe"}
-          >
-            Sobre mim
-          </Button.Root>
-          <Button.Root
-            variant={"Ghosted"}
-            clickAction={toggleMenuMobile}
-            link={"#technology"}
-          >
-            Tecnologias
-          </Button.Root>
-          <Button.Root
-            variant={"Ghosted"}
-            clickAction={toggleMenuMobile}
-            link={"#mainProjects"}
-          >
-            Principais Projetos
-          </Button.Root>
-          <Button.Root
-            variant={"Ghosted"}
-            clickAction={toggleMenuMobile}
-            link={"#contacts"}
-          >
-            Contatos
-          </Button.Root>
+          {menuMobileText.length > 0 &&
+            menuMobileText.map(({ label, link }, index) => (
+              <Button.Root
+                key={index}
+                variant={"Ghosted"}
+                clickAction={toggleMenuMobile}
+                link={link}
+              >
+                {label}
+              </Button.Root>
+            ))}
         </div>
       </div>
     )

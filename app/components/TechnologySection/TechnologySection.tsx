@@ -1,3 +1,5 @@
+"use client";
+
 import "./TechnologySection.scss";
 import htmlLogo from "../../assets/html-logo.svg";
 import cssLogo from "../../assets/css-logo.svg";
@@ -10,11 +12,16 @@ import expressjsLogo from "../../assets/expressjs-logo.svg";
 import tailwindCSS from "../../assets/tailwindCSS.svg";
 import sassLogo from "../../assets/sass.svg";
 import { TechnologyCards } from "../TechnologyCards/TechnologyCards";
+import useToggleTechnologyText from "./useToggleTechnologyText";
 
 export function TechnologySection() {
+  const {
+    technologyText: { title },
+  } = useToggleTechnologyText();
+
   return (
     <section id="technology">
-      <h1 className="technology-section__title">Tecnologias</h1>
+      <h1 className="technology-section__title">{title}</h1>
       <div className="technology-section__cards-area">
         <TechnologyCards techText={"HTML 5"} techImage={htmlLogo} />
         <TechnologyCards techText={"CSS 3"} techImage={cssLogo} />

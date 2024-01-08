@@ -6,14 +6,12 @@ import { TechnologySection } from "./components/TechnologySection/TechnologySect
 
 export default function Home() {
   return (
-    <>
-      <main>
-        <MainBanner />
-        <AboutMe />
-        <TechnologySection />
-        <MainProjects />
-        <Contacts />
-      </main>
-    </>
+    <main>
+      <MainBanner />
+      <AboutMe />
+      <TechnologySection />
+      <MainProjects />
+      <Contacts />
+    </main>
   );
 }

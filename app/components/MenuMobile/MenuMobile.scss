@@ -13,6 +13,8 @@
   left: 0;
   position: fixed;
 
+  z-index: 10;
+
   @include mixinDisplayFlex.columnCenterCenter;
   row-gap: spacings.$spacing-xl;
 

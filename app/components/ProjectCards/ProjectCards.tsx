@@ -3,40 +3,41 @@ import { RxGithubLogo } from "react-icons/rx";
 import { Button } from "../Button";
 import "./ProjectCards.scss";
 import Image from "next/image";
+import useToggleButtonsText from "./useToggleButtonsText";
 
 export interface ProjectCardsProps {
-  projectLink: string;
-  projectName: string;
-  projectImage: any;
-  projectDescription: string;
+  link: string;
+  title: string;
+  image: any;
+  description: string;
   githubLink: string;
 }
 
 export function ProjectCards({
-  projectLink,
-  projectName,
-  projectImage,
-  projectDescription,
+  link,
+  title,
+  image,
+  description,
   githubLink,
 }: ProjectCardsProps) {
+  const {
+    buttonsText: { mainButton, secondaryButton },
+  } = useToggleButtonsText();
+
   return (
     <div className="project-cards">
       <div className="project-cards__thumbnail">
-        <Image src={projectImage} alt={`${projectName}'s thumbnail`} />
+        <Image src={image} alt={`${title}'s thumbnail`} />
       </div>
       <div className="project-cards__information">
         <div className="information">
-          <h3>{projectName}</h3>
-          <p>{projectDescription}</p>
+          <h3>{title}</h3>
+          <p>{description}</p>
         </div>
         <div className="information__buttons-area">
-          <Button.Root
-            variant={"Filled"}
-            link={projectLink}
-            targetValue={"_blank"}
-          >
+          <Button.Root variant={"Filled"} link={link} targetValue={"_blank"}>
             <Button.Icon icon={Eye} />
-            Ver Projeto
+            {mainButton}
           </Button.Root>
           <Button.Root
             variant={"Outlined"}
@@ -44,7 +45,7 @@ export function ProjectCards({
             targetValue={"_blank"}
           >
             <Button.Icon icon={RxGithubLogo} />
-            Ver GitHub
+            {secondaryButton}
           </Button.Root>
         </div>
       </div>

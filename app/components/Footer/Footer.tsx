@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import leonardoRossiLogoGreen from "../../assets/logo-green.svg";
 import "./Footer.scss";
@@ -5,8 +7,11 @@ import Link from "next/link";
 import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 import { BiLogoGmail } from "react-icons/bi";
 import { Anchor } from "../Anchor/Anchor";
+import useToggleFooterText from "./useToogleFooterText";
 
 export default function Footer() {
+  const { footerText } = useToggleFooterText();
+
   return (
     <footer className="footer">
       <div className="footer__logo-social-media">
@@ -29,10 +34,12 @@ export default function Footer() {
       <div className="footer__divisor"></div>
       <div className="anchors-copyright">
         <div className="anchors">
-          <Anchor link="#aboutMe">Sobre Mim</Anchor>
-          <Anchor link="#technology">Tecnologias</Anchor>
-          <Anchor link="#mainProjects">Principais Projetos</Anchor>
-          <Anchor link="#contacts">Contatos</Anchor>
+          {footerText.length > 0 &&
+            footerText.map(({ link, title }, index) => (
+              <Anchor key={index} link={link}>
+                {title}
+              </Anchor>
+            ))}
         </div>
         <small>Ⓒ Leonardo Rossi</small>
       </div>
