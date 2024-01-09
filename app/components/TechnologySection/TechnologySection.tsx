@@ -2,26 +2,25 @@
 
 import "./TechnologySection.scss";
 import useToggleTechnologyText from "./useToggleTechnologyText";
-import type { TabsProps } from "antd";
 import DataBaseTechnologys from "./SplittedTechs/DataBaseTechnologys";
 import FrontEndTechnologys from "./SplittedTechs/FrontEndTechnologys";
 import BackEndTechnologys from "./SplittedTechs/BackEndTechnologys";
-import TechnologysTabs from "../TechnologysTabs/TechnologysTabs";
+import Tabs from "../Tabs/Tabs";
 
-const items: TabsProps["items"] = [
+const items = [
   {
-    key: "1",
-    label: "Banco de Dados",
+    id: 1,
+    name: "Database",
     children: <DataBaseTechnologys />,
   },
   {
-    key: "2",
-    label: "Back-End",
+    id: 2,
+    name: "Back-End",
     children: <BackEndTechnologys />,
   },
   {
-    key: "3",
-    label: "Front-End",
+    id: 3,
+    name: "Front-End",
     children: <FrontEndTechnologys />,
   },
 ];
@@ -34,7 +33,7 @@ export function TechnologySection() {
   return (
     <section id="technology">
       <h2 className="technology-section__title">{title}</h2>
-      <TechnologysTabs />
+      <Tabs items={items} />
     </section>
   );
 }
