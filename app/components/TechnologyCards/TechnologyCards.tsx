@@ -2,17 +2,17 @@ import Image from "next/image";
 import "./TechnologyCards.scss";
 
 export interface TechnologyCardsProps {
-  techImage: string;
-  techText: string;
+  image: string;
+  text: string;
 }
 
-export function TechnologyCards({ techImage, techText }: TechnologyCardsProps) {
+export function TechnologyCards({ image, text }: TechnologyCardsProps) {
   return (
     <div className="technology-cards">
       <div className="thumbnail">
-        <Image src={techImage} alt={`${techText}'s thumbnail`} />
+        <Image src={image} alt={`${text}'s thumbnail`} />
       </div>
-      <h4>{techText}</h4>
+      <p>{text}</p>
     </div>
   );
 }

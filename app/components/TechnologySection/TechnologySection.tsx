@@ -1,18 +1,31 @@
 "use client";
 
 import "./TechnologySection.scss";
-import htmlLogo from "../../assets/html-logo.svg";
-import cssLogo from "../../assets/css-logo.svg";
-import javascriptLogo from "../../assets/javascript-logo.svg";
-import typescriptLogo from "../../assets/typescript-logo.svg";
-import nodejsLogo from "../../assets/nodejs-logo.svg";
-import reactjsLogo from "../../assets/reactjs-logo.svg";
-import mongodbLogo from "../../assets/mongodb-logo.svg";
-import expressjsLogo from "../../assets/expressjs-logo.svg";
-import tailwindCSS from "../../assets/tailwindCSS.svg";
-import sassLogo from "../../assets/sass.svg";
-import { TechnologyCards } from "../TechnologyCards/TechnologyCards";
+import "./AntTabs.scss";
 import useToggleTechnologyText from "./useToggleTechnologyText";
+import { Tabs } from "antd";
+import type { TabsProps } from "antd";
+import DataBaseTechnologys from "./SplittedTechs/DataBaseTechnologys";
+import FrontEndTechnologys from "./SplittedTechs/FrontEndTechnologys";
+import BackEndTechnologys from "./SplittedTechs/BackEndTechnologys";
+
+const items: TabsProps["items"] = [
+  {
+    key: "1",
+    label: "Banco de Dados",
+    children: <DataBaseTechnologys />,
+  },
+  {
+    key: "2",
+    label: "Back-End",
+    children: <BackEndTechnologys />,
+  },
+  {
+    key: "3",
+    label: "Front-End",
+    children: <FrontEndTechnologys />,
+  },
+];
 
 export function TechnologySection() {
   const {
@@ -22,18 +35,7 @@ export function TechnologySection() {
   return (
     <section id="technology">
       <h1 className="technology-section__title">{title}</h1>
-      <div className="technology-section__cards-area">
-        <TechnologyCards techText={"HTML 5"} techImage={htmlLogo} />
-        <TechnologyCards techText={"CSS 3"} techImage={cssLogo} />
-        <TechnologyCards techText={"SASS"} techImage={sassLogo} />
-        <TechnologyCards techText={"Tailwind CSS"} techImage={tailwindCSS} />
-        <TechnologyCards techText={"JavaScript"} techImage={javascriptLogo} />
-        <TechnologyCards techText={"TypeScript"} techImage={typescriptLogo} />
-        <TechnologyCards techText={"Node JS"} techImage={nodejsLogo} />
-        <TechnologyCards techText={"React JS"} techImage={reactjsLogo} />
-        <TechnologyCards techText={"MongoDB"} techImage={mongodbLogo} />
-        <TechnologyCards techText={"Express JS"} techImage={expressjsLogo} />
-      </div>
+      <Tabs defaultActiveKey="1" items={items} centered />
     </section>
   );
 }

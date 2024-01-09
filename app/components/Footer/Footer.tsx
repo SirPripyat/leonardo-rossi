@@ -9,6 +9,21 @@ import { BiLogoGmail } from "react-icons/bi";
 import { Anchor } from "../Anchor/Anchor";
 import useToggleFooterText from "./useToogleFooterText";
 
+const footerSocialMediaContent = [
+  {
+    link: "https://www.linkedin.com/in/leonardo-rossi-43715b209/",
+    icon: <RxLinkedinLogo />,
+  },
+  {
+    link: "https://github.com/SirPripyat",
+    icon: <RxGithubLogo />,
+  },
+  {
+    link: "mailto:08.leo.rossi@gmail.com",
+    icon: <BiLogoGmail />,
+  },
+];
+
 export default function Footer() {
   const { footerText } = useToggleFooterText();
 
@@ -17,18 +32,11 @@ export default function Footer() {
       <div className="footer__logo-social-media">
         <Image src={leonardoRossiLogoGreen} alt="Leonardo Rossi Logo" />
         <div className="social-media">
-          <Link
-            href="https://www.linkedin.com/in/leonardo-rossi-43715b209/"
-            target="_blank"
-          >
-            <RxLinkedinLogo />
-          </Link>
-          <Link href="https://github.com/SirPripyat" target="_blank">
-            <RxGithubLogo />
-          </Link>
-          <Link href="mailto:08.leo.rossi@gmail.com" target="_blank">
-            <BiLogoGmail />
-          </Link>
+          {footerSocialMediaContent.map(({ link, icon }, index) => (
+            <Link href={link} target="_blank" key={index}>
+              {icon}
+            </Link>
+          ))}
         </div>
       </div>
       <div className="footer__divisor"></div>

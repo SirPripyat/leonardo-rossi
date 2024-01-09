@@ -1,0 +1,32 @@
+@use "../../styles/variables/colors.scss";
+@use "../../styles/mixins/mixinFonts.scss";
+
+:where(.css-dev-only-do-not-override-dkbvqv).ant-tabs {
+  width: 100% !important;
+}
+
+:where(.css-dev-only-do-not-override-dkbvqv).ant-tabs .ant-tabs-ink-bar {
+  background-color: colors.$branding-color-250 !important;
+}
+
+:where(.css-dev-only-do-not-override-dkbvqv).ant-tabs
+  .ant-tabs-tab.ant-tabs-tab-active
+  .ant-tabs-tab-btn {
+  color: colors.$branding-color-250 !important;
+
+  @include mixinFonts.P-Small;
+}
+
+:where(.css-dev-only-do-not-override-dkbvqv).ant-tabs .ant-tabs-tab-btn {
+  outline: none;
+  transition: all 0.3s;
+
+  color: colors.$grayscale-color-100 !important;
+
+  @include mixinFonts.P-Small;
+}
+
+:where(.css-dev-only-do-not-override-dkbvqv).ant-tabs-top
+  > .ant-tabs-nav::before {
+  border-bottom: 1px solid transparent !important;
+}

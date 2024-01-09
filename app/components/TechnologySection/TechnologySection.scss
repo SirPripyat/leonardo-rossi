@@ -1,15 +1,41 @@
 @use "../../styles/variables/colors.scss";
 @use "../../styles/variables/spacings.scss";
 @use "../../styles/mixins/mixinDisplayFlex.scss";
+@use "../../styles/variables/breakpoints.scss";
 
 .technology-section__title {
   color: colors.$branding-color-250;
 }
 
 .technology-section__cards-area {
-  @include mixinDisplayFlex.rowCenterCenter;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 2fr));
+
   gap: spacings.$spacing-sm;
 
   width: 100%;
+}
+
+@media (min-width: breakpoints.$breakpoint-sm) {
+  .technology-section__cards-area {
+    grid-template-columns: repeat(3, minmax(0, 2fr));
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-md) {
+  .technology-section__cards-area {
+    grid-template-columns: repeat(4, minmax(0, 2fr));
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-lg) {
+  .technology-section__cards-area {
+    grid-template-columns: repeat(5, minmax(0, 2fr));
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-xl) {
+  .technology-section__cards-area {
+    grid-template-columns: repeat(7, minmax(0, 2fr));
+  }
 }
