@@ -8,7 +8,13 @@ import useToggleBannerText from "./useToggleBannerText";
 
 export function MainBanner() {
   const {
-    bannerText: { apresentation, name, profession },
+    bannerText: {
+      apresentation,
+      name,
+      profession,
+      primaryButton,
+      secondaryButton,
+    },
   } = useToggleBannerText();
 
   return (
@@ -29,10 +35,10 @@ export function MainBanner() {
             targetValue={"_blank"}
             link="https://drive.google.com/file/d/1muUo9jyYYyGoa1aQtSZ-Ev9MHCCWw4vr/view"
           >
-            Ver currículo
+            {primaryButton}
           </Button.Root>
           <Button.Root variant={"Outlined"} link="#contacts">
-            Contatos
+            {secondaryButton}
           </Button.Root>
         </div>
       </div>

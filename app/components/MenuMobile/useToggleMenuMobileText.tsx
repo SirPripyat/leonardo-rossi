@@ -16,7 +16,7 @@ export default function useToggleMenuMobileText() {
       return setMenuMobileText([
         { label: "Sobre Mim", link: "#aboutMe" },
         { label: "Tecnologias", link: "#technology" },
-        { label: "Projetos", link: "#mainProjects" },
+        { label: "Projetos", link: "#projects" },
         { label: "Contatos", link: "#contacts" },
       ]);
     }
@@ -25,7 +25,7 @@ export default function useToggleMenuMobileText() {
       return setMenuMobileText([
         { label: "About Me", link: "#aboutMe" },
         { label: "Technologies", link: "#technology" },
-        { label: "Projects", link: "#mainProjects" },
+        { label: "Projects", link: "#projects" },
         { label: "Contacts", link: "#contacts" },
       ]);
     }

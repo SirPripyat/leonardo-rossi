@@ -1,7 +1,8 @@
 import { AboutMe } from "./components/AboutMe/AboutMe";
 import { Contacts } from "./components/Contacts/Contacts";
+import Experiences from "./components/Experiences/Experiences";
 import { MainBanner } from "./components/MainBanner/MainBanner";
-import { MainProjects } from "./components/MainProjects/MainProjects";
+import { Projects } from "./components/MainProjects/Projects";
 import { TechnologySection } from "./components/TechnologySection/TechnologySection";
 
 export default function Home() {
@@ -9,8 +10,9 @@ export default function Home() {
     <main>
       <MainBanner />
       <AboutMe />
+      <Experiences />
       <TechnologySection />
-      <MainProjects />
+      <Projects />
       <Contacts />
     </main>
   );

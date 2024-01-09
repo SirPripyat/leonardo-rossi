@@ -1,0 +1,16 @@
+@use "../../styles/variables/spacings.scss";
+@use "../../styles/variables/colors.scss";
+
+.experiences-container {
+  h2 {
+    color: colors.$branding-color-250;
+  }
+}
+
+.experiences-container__companys {
+  display: flex;
+  flex-direction: column;
+  gap: spacings.$spacing-sm;
+
+  width: 100%;
+}

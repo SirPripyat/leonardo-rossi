@@ -1,0 +1,59 @@
+@use "../../styles/variables/colors.scss";
+@use "../../styles/variables/spacings.scss";
+@use "../../styles/variables/paddings.scss";
+
+.experiences-card {
+  display: flex;
+  flex-direction: column;
+  gap: spacings.$spacing-sm;
+
+  background-color: colors.$background-color-50;
+
+  border-radius: 0.8rem;
+
+  padding: paddings.$padding-display-2xs;
+
+  width: 100%;
+}
+
+.experiences-card__top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+
+  width: 100%;
+}
+
+.top-content__logo-role {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: spacings.$spacing-xs;
+
+  img {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  h4 {
+    font-weight: 600;
+  }
+}
+
+.experiences-card__bottom-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: spacings.$spacing-xs;
+}
+
+.bottom-content__company {
+  display: flex;
+  align-items: baseline;
+  gap: spacings.$spacing-xs;
+
+  small {
+    color: colors.$grayscale-color-150;
+  }
+}

@@ -1,11 +1,14 @@
 import { LanguageContext } from "@/app/context/languageContext/LanguageContext";
+import { StaticImageData } from "next/image";
 import { useCallback, useContext, useEffect, useState } from "react";
+import pokemonLogo from "../../assets/Pokemon-Logo.png";
 
 type ProjectsText = {
   title: string;
   description: string;
   link: string;
   gitHubLink: string;
+  image: StaticImageData;
 };
 
 type ProjectsSectionText = {
@@ -31,6 +34,7 @@ export default function useToggleProjectsText() {
               "Pokédex utilizando ReactJs, NextJs 13, Typescript e TailwindCSS",
             link: "https://pokedex-next-ca26ec4b27cc.herokuapp.com/",
             gitHubLink: "https://github.com/SirPripyat/pokemon",
+            image: pokemonLogo,
           },
         ],
       });
@@ -45,6 +49,7 @@ export default function useToggleProjectsText() {
               "Pokédex using ReactJs, NextJs 13, Typescript and TailwindCSS",
             link: "https://pokedex-next-ca26ec4b27cc.herokuapp.com/",
             gitHubLink: "https://github.com/SirPripyat/pokemon",
+            image: pokemonLogo,
           },
         ],
       });

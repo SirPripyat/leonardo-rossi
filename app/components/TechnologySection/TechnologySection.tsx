@@ -34,7 +34,7 @@ export function TechnologySection() {
 
   return (
     <section id="technology">
-      <h1 className="technology-section__title">{title}</h1>
+      <h2 className="technology-section__title">{title}</h2>
       <Tabs defaultActiveKey="1" items={items} centered />
     </section>
   );

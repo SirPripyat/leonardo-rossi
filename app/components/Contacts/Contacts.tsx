@@ -13,7 +13,7 @@ export function Contacts() {
 
   return (
     <section id="contacts">
-      <h1 className="contacts__title">{title}</h1>
+      <h2 className="contacts__title">{title}</h2>
       <div className="contacts__card-area">
         <ContactCards
           contactName={"Linkedin"}

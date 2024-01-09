@@ -5,6 +5,8 @@ type BannerText = {
   apresentation: string;
   name: string;
   profession: string;
+  primaryButton: string;
+  secondaryButton: string;
 };
 
 export default function useToggleBannerText() {
@@ -18,6 +20,8 @@ export default function useToggleBannerText() {
         apresentation: "Olá, eu sou o",
         name: "<Leonardo Rossi/>",
         profession: "// Desenvolvedor FullStack",
+        primaryButton: "Ver currículo",
+        secondaryButton: "Contatos",
       });
     }
 
@@ -26,6 +30,8 @@ export default function useToggleBannerText() {
         apresentation: "Hello, I'm",
         name: "<Leonardo Rossi/>",
         profession: "// FullStack Developer",
+        primaryButton: "See resume",
+        secondaryButton: "Contacts",
       });
     }
   }, [language]);

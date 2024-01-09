@@ -24,7 +24,7 @@ export default function useToggleFooterText() {
         },
         {
           title: "Projetos",
-          link: "#mainProjects",
+          link: "#projects",
         },
         {
           title: "Contatos",
@@ -44,7 +44,7 @@ export default function useToggleFooterText() {
         },
         {
           title: "Projects",
-          link: "#mainProjects",
+          link: "#projects",
         },
         {
           title: "Contacts",
