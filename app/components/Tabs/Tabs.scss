@@ -21,7 +21,7 @@
 }
 
 .tabs-top__tabs {
-  @include mixinFonts.P-Small;
+  @include mixinFonts.P-Medium;
   color: colors.$grayscale-color-100;
 
   background-color: transparent;
@@ -30,6 +30,10 @@
   padding: 0 0.8rem;
 
   cursor: pointer;
+
+  &:hover {
+    color: colors.$grayscale-color-150;
+  }
 }
 
 .tabs-top__tab-active {
@@ -39,6 +43,12 @@
   padding-bottom: 0.8rem;
 
   border-bottom: 2px solid colors.$branding-color-250;
+
+  &:hover {
+    color: colors.$branding-color-150;
+
+    border-bottom: 2px solid colors.$branding-color-150;
+  }
 }
 
 .technologys-tabs__tabs-content {
