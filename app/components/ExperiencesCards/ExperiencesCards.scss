@@ -11,7 +11,7 @@
 
   border-radius: 0.8rem;
 
-  padding: paddings.$padding-display-2xs;
+  padding: paddings.$padding-display-xs;
 
   width: 100%;
 }
@@ -30,7 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: spacings.$spacing-xs;
+  column-gap: spacings.$spacing-sm;
 
   img {
     width: 3.2rem;
@@ -42,6 +42,10 @@
   }
 }
 
+.experiences-card__line-divisor {
+  border: 0.1rem solid colors.$background-color-00;
+}
+
 .experiences-card__bottom-content {
   display: flex;
   flex-direction: column;
@@ -49,11 +53,39 @@
 }
 
 .bottom-content__company {
+  color: colors.$grayscale-color-200;
+}
+
+.bottom-content__date {
+  color: colors.$grayscale-color-150;
+}
+
+.bottom-content__skills-tags {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: spacings.$spacing-xs;
 
-  small {
+  width: 100%;
+}
+
+.skills-tags {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: spacings.$spacing-xs;
+
+  padding: 0.4rem 1.2rem;
+
+  border-radius: 10rem;
+
+  background-color: colors.$background-color-00;
+
+  border: 1px solid colors.$branding-color-00;
+
+  p {
+    font-size: 1.4rem;
+    font-weight: 600;
+
     color: colors.$grayscale-color-150;
   }
 }

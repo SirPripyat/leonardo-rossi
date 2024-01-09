@@ -15,6 +15,7 @@ export default function useToggleMenuMobileText() {
     if (language === "pt-br") {
       return setMenuMobileText([
         { label: "Sobre Mim", link: "#aboutMe" },
+        { label: "Experiências", link: "#experiences" },
         { label: "Tecnologias", link: "#technology" },
         { label: "Projetos", link: "#projects" },
         { label: "Contatos", link: "#contacts" },
@@ -24,6 +25,7 @@ export default function useToggleMenuMobileText() {
     if (language === "us-en") {
       return setMenuMobileText([
         { label: "About Me", link: "#aboutMe" },
+        { label: "Experiences", link: "#experiences" },
         { label: "Technologies", link: "#technology" },
         { label: "Projects", link: "#projects" },
         { label: "Contacts", link: "#contacts" },

@@ -6,11 +6,11 @@ import springBootLogo from "../../../assets/springboot-logo.svg";
 
 export default function BackEndTechnologys() {
   return (
-    <div className="technology-section__cards-area">
+    <>
       <TechnologyCards text={"Node JS"} image={nodejsLogo} />
       <TechnologyCards text={"Express JS"} image={expressjsLogo} />
       <TechnologyCards text={"Java"} image={javaLogo} />
       <TechnologyCards text={"SpringBoot"} image={springBootLogo} />
-    </div>
+    </>
   );
 }

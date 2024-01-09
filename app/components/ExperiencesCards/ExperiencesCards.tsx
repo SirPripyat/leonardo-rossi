@@ -13,6 +13,7 @@ interface ExperiencesCardsProps {
   date: string;
   description: string;
   cardIsOpen?: boolean;
+  skills: string[];
 }
 export default function ExperiencesCards({
   companyImage,
@@ -21,6 +22,7 @@ export default function ExperiencesCards({
   date,
   description,
   cardIsOpen,
+  skills,
 }: ExperiencesCardsProps) {
   const { cardOpen, toggleCardOpen } = useExperiencesCards({
     cardIsOpen,
@@ -36,14 +38,21 @@ export default function ExperiencesCards({
         <IconButton icon={cardOpen ? ChevronUp : ChevronDown} />
       </div>
       {cardOpen && (
-        <div className="experiences-card__bottom-content">
-          <span className="bottom-content__company">
-            <small>Empresa </small>
-            <p>{company}</p>
-          </span>
-          <small>{date}</small>
-          <p>{description}</p>
-        </div>
+        <>
+          <hr className="experiences-card__line-divisor" />
+          <div className="experiences-card__bottom-content">
+            <p className="bottom-content__company">{company}</p>
+            <small className="bottom-content__date">{date}</small>
+            <p>{description}</p>
+            <div className="bottom-content__skills-tags">
+              {skills.map((skill, id) => (
+                <div className="skills-tags" key={id}>
+                  <p>{skill}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </>
       )}
     </div>
   );

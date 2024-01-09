@@ -10,7 +10,7 @@ import sassLogo from "../../../assets/sass.svg";
 
 export default function FrontEndTechnologys() {
   return (
-    <div className="technology-section__cards-area">
+    <>
       <TechnologyCards text={"HTML 5"} image={htmlLogo} />
       <TechnologyCards text={"CSS 3"} image={cssLogo} />
       <TechnologyCards text={"SASS"} image={sassLogo} />
@@ -19,6 +19,6 @@ export default function FrontEndTechnologys() {
       <TechnologyCards text={"TypeScript"} image={typescriptLogo} />
       <TechnologyCards text={"React JS"} image={reactjsLogo} />
       <TechnologyCards text={"Next JS"} image={nextLogo} />
-    </div>
+    </>
   );
 }

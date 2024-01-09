@@ -18,6 +18,7 @@ export default function useToggleFooterText() {
           title: "Sobre Mim",
           link: "#aboutMe",
         },
+        { title: "Experiências", link: "#experiences" },
         {
           title: "Tecnologias",
           link: "#technology",
@@ -38,6 +39,7 @@ export default function useToggleFooterText() {
           title: "About Me",
           link: "#aboutMe",
         },
+        { title: "Experiences", link: "#experiences" },
         {
           title: "Technologies",
           link: "#technology",

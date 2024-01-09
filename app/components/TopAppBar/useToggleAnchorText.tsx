@@ -15,6 +15,7 @@ export default function useToggleAnchorText() {
     if (language === "pt-br") {
       return setAnchorText([
         { label: "Sobre Mim", link: "#aboutMe" },
+        { label: "Experiências", link: "#experiences" },
         { label: "Tecnologias", link: "#technology" },
         { label: "Projetos", link: "#projects" },
         { label: "Contatos", link: "#contacts" },
@@ -24,6 +25,7 @@ export default function useToggleAnchorText() {
     if (language === "us-en") {
       return setAnchorText([
         { label: "About Me", link: "#aboutMe" },
+        { label: "Experiences", link: "#experiences" },
         { label: "Technologies", link: "#technology" },
         { label: "Projects", link: "#projects" },
         { label: "Contacts", link: "#contacts" },
