@@ -16,7 +16,7 @@ export default function useToggleAnchorText() {
       return setAnchorText([
         { label: "Sobre Mim", link: "#aboutMe" },
         { label: "Tecnologias", link: "#technology" },
-        { label: "Principais Projetos", link: "#mainProjects" },
+        { label: "Projetos", link: "#mainProjects" },
         { label: "Contatos", link: "#contacts" },
       ]);
     }
@@ -25,7 +25,7 @@ export default function useToggleAnchorText() {
       return setAnchorText([
         { label: "About Me", link: "#aboutMe" },
         { label: "Technologies", link: "#technology" },
-        { label: "Main Projects", link: "#mainProjects" },
+        { label: "Projects", link: "#mainProjects" },
         { label: "Contacts", link: "#contacts" },
       ]);
     }

@@ -23,7 +23,7 @@ export default function useToggleProjectsText() {
   const toggleProjectsText = useCallback(() => {
     if (language === "pt-br")
       return setProjectsText({
-        title: "Principais Projetos",
+        title: "Projetos",
         projects: [
           {
             title: "Pokedéx",
@@ -37,7 +37,7 @@ export default function useToggleProjectsText() {
 
     if (language === "us-en")
       return setProjectsText({
-        title: "Main Projects",
+        title: "Projects",
         projects: [
           {
             title: "Pokedéx",

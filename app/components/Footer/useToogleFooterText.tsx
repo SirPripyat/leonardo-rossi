@@ -23,7 +23,7 @@ export default function useToggleFooterText() {
           link: "#technology",
         },
         {
-          title: "Principais Projetos",
+          title: "Projetos",
           link: "#mainProjects",
         },
         {
@@ -43,7 +43,7 @@ export default function useToggleFooterText() {
           link: "#technology",
         },
         {
-          title: "Main Projects",
+          title: "Projects",
           link: "#mainProjects",
         },
         {
