@@ -7,7 +7,8 @@ import Link from "next/link";
 import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 import { BiLogoGmail } from "react-icons/bi";
 import { Anchor } from "../Anchor/Anchor";
-import useToggleFooterText from "./useToogleFooterText";
+import useToggleLanguageText from "@/app/hooks/useToggleText";
+import { pageAnchorsText } from "@/app/texts/pageAnchorsText";
 
 const footerSocialMediaContent = [
   {
@@ -25,7 +26,7 @@ const footerSocialMediaContent = [
 ];
 
 export default function Footer() {
-  const { footerText } = useToggleFooterText();
+  const { text } = useToggleLanguageText(pageAnchorsText);
 
   return (
     <footer className="footer">
@@ -42,12 +43,11 @@ export default function Footer() {
       <div className="footer__divisor"></div>
       <div className="anchors-copyright">
         <div className="anchors">
-          {footerText.length > 0 &&
-            footerText.map(({ link, title }, index) => (
-              <Anchor key={index} link={link}>
-                {title}
-              </Anchor>
-            ))}
+          {text.map(({ link, label }, index) => (
+            <Anchor key={index} link={link}>
+              {label}
+            </Anchor>
+          ))}
         </div>
         <small>Ⓒ Leonardo Rossi</small>
       </div>

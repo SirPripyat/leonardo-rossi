@@ -12,14 +12,15 @@ import { IconButton } from "../IconButton/IconButton";
 import { useMenuMobileStore } from "@/app/store/menuMobile";
 import { useContext } from "react";
 import { LanguageContext } from "@/app/context/languageContext/LanguageContext";
-import useToggleAnchorText from "./useToggleAnchorText";
+import useToggleLanguageText from "@/app/hooks/useToggleText";
+import { pageAnchorsText } from "@/app/texts/pageAnchorsText";
 
 export function TopAppBar() {
   const { toggleMenuMobile } = useMenuMobileStore();
 
   const { language, setLanguageOnClick } = useContext(LanguageContext);
 
-  const { anchorText } = useToggleAnchorText();
+  const { text } = useToggleLanguageText(pageAnchorsText);
 
   return (
     <>
@@ -34,7 +35,7 @@ export function TopAppBar() {
         </div>
         <div className="top-app-bar__languages-anchors">
           <div className="anchors-wrapper">
-            {anchorText.map(({ label, link }, index) => (
+            {text.map(({ label, link }, index) => (
               <Button.Root key={index} variant={"Ghosted"} link={link}>
                 {label}
               </Button.Root>
