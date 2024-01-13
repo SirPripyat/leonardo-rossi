@@ -4,18 +4,13 @@ import leonardoRossiProfilePicture from "../../assets/profilePicture.png";
 import Image from "next/image";
 import { Button } from "../Button";
 import "./MainBanner.scss";
-import useToggleBannerText from "./useToggleBannerText";
+import useToggleLanguageText from "@/app/hooks/useToggleText";
+import { mainBannerText } from "@/app/texts/mainBannerText";
 
 export function MainBanner() {
   const {
-    bannerText: {
-      apresentation,
-      name,
-      profession,
-      primaryButton,
-      secondaryButton,
-    },
-  } = useToggleBannerText();
+    text: { apresentation, name, profession, primaryButton, secondaryButton },
+  } = useToggleLanguageText(mainBannerText);
 
   return (
     <section className="main-banner">
