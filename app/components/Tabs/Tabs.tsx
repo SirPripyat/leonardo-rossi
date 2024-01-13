@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import "./Tabs.scss";
 import useTabs from "./useTabs";
 
@@ -28,7 +29,12 @@ export default function Tabs({ items }: TabsProps) {
         ))}
       </div>
       <div className="technologys-tabs__tabs-content">
-        {items.map(({ id, children }) => activeTab === id && children)}
+        {items.map(
+          ({ id, children }) =>
+            activeTab === id && (
+              <React.Fragment key={id}>{children}</React.Fragment>
+            )
+        )}
       </div>
     </div>
   );
