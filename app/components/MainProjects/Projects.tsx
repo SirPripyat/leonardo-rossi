@@ -2,28 +2,20 @@
 
 import "./Projects.scss";
 import { ProjectCards } from "../ProjectCards/ProjectCards";
-import useToggleProjectsText from "./useToggleProjectsText";
+import useToggleLanguageText from "@/app/hooks/useToggleText";
+import { projectText } from "@/app/texts/projectsText";
 
 export function Projects() {
   const {
-    projectsText: { title, projects },
-  } = useToggleProjectsText();
+    text: { title, projects },
+  } = useToggleLanguageText(projectText);
 
   return (
     <section id="projects">
       <h2 className="projects__title">{title}</h2>
-      {projects?.map(
-        ({ title, description, link, gitHubLink, image }, index) => (
-          <ProjectCards
-            key={index}
-            title={title}
-            description={description}
-            image={image}
-            link={link}
-            githubLink={gitHubLink}
-          />
-        )
-      )}
+      {projects.map((project, index) => (
+        <ProjectCards key={index} {...project} />
+      ))}
     </section>
   );
 }

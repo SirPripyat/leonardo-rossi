@@ -4,14 +4,7 @@ import { Button } from "../Button";
 import "./ProjectCards.scss";
 import Image from "next/image";
 import useToggleButtonsText from "./useToggleButtonsText";
-
-export interface ProjectCardsProps {
-  link: string;
-  title: string;
-  image: any;
-  description: string;
-  githubLink: string;
-}
+import { ProjectsText as ProjectCardsProps } from "@/app/types/projectsText";
 
 export function ProjectCards({
   link,

@@ -2,34 +2,22 @@
 
 import "./Contacts.scss";
 import { ContactCards } from "../ContactCards/ContactCards";
-import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
-import { BiLogoGmail } from "react-icons/bi";
-import useToggleContactsText from "./useToggleContactsText";
+import useToggleLanguageText from "@/app/hooks/useToggleText";
+import { contactTexts } from "@/app/texts/contactText";
+import { contactsContent } from "@/app/utils/contactsContent";
 
 export function Contacts() {
   const {
-    contactsText: { title },
-  } = useToggleContactsText();
+    text: { title },
+  } = useToggleLanguageText(contactTexts);
 
   return (
     <section id="contacts">
       <h2 className="contacts__title">{title}</h2>
       <div className="contacts__card-area">
-        <ContactCards
-          contactName={"Linkedin"}
-          contactIcon={RxLinkedinLogo}
-          contactLink={"https://www.linkedin.com/in/leonardo-rossi-43715b209/"}
-        />
-        <ContactCards
-          contactName={"GitHub"}
-          contactIcon={RxGithubLogo}
-          contactLink={"https://github.com/SirPripyat"}
-        />
-        <ContactCards
-          contactName={"Gmail"}
-          contactIcon={BiLogoGmail}
-          contactLink={"mailto:08.leo.rossi@gmail.com"}
-        />
+        {contactsContent.map((contact, index) => (
+          <ContactCards key={index} {...contact} />
+        ))}
       </div>
     </section>
   );

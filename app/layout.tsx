@@ -5,7 +5,6 @@ import { Poppins } from "next/font/google";
 import { Metadata } from "next";
 import { MenuMobile } from "./components/MenuMobile/MenuMobile";
 import { LanguageProvider } from "./context/languageContext/LanguageContext";
-import { AntdRegistry } from "@ant-design/nextjs-registry";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -24,14 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <AntdRegistry>
-          <LanguageProvider>
-            <TopAppBar />
-            <MenuMobile />
-            {children}
-            <Footer />
-          </LanguageProvider>
-        </AntdRegistry>
+        <LanguageProvider>
+          <TopAppBar />
+          <MenuMobile />
+          {children}
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );
