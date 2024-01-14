@@ -57,7 +57,7 @@ export const experiencesText: ExperiencesText = {
       companyImage: quantzedLogo,
       role: "Front-End",
       company: quantzedBase.company,
-      date: "Nov 2021 - Feb 2023",
+      date: "Nov 2021 - Fev 2023",
       description:
         "Como Desenvolvedor Front-End, eu me esforcei para aprimorar a experiência do desenvolvedor (DX) colaborando no Design System da empresa. Através de iniciativas, melhorei a experiência do usuário (UX) da interface, garantindo uma experiência fluida e amigável em todos os projetos.",
       skills: quantzedBase.skills,
