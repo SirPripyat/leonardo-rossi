@@ -64,6 +64,7 @@
   display: flex;
   align-items: center;
   gap: spacings.$spacing-xs;
+  flex-wrap: wrap;
 
   width: 100%;
 }
