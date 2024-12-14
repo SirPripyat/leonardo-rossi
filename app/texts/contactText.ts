@@ -1,4 +1,4 @@
-import { LanguageType } from "../types/language";
+import { LanguageType } from '../types/language';
 
 type ContactTexts = {
   [key in LanguageType]: {
@@ -7,10 +7,10 @@ type ContactTexts = {
 };
 
 export const contactTexts: ContactTexts = {
-  "pt-br": {
-    title: "Contatos",
+  'pt-br': {
+    title: 'Contatos',
   },
-  "us-en": {
-    title: "Contacts",
+  'us-en': {
+    title: 'Contacts',
   },
 };

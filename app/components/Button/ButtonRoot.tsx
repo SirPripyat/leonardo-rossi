@@ -1,5 +1,5 @@
-import Link from "next/link";
-import "./Button.scss";
+import Link from 'next/link';
+import './Button.scss';
 
 export interface ButtonRootProps {
   children: React.ReactNode;
@@ -21,9 +21,9 @@ export function ButtonRoot({
   targetValue,
 }: ButtonRootProps) {
   const buttonTypes: ButtonTypes = {
-    filled: "filled",
-    outlined: "outlined",
-    ghosted: "ghosted",
+    filled: 'filled',
+    outlined: 'outlined',
+    ghosted: 'ghosted',
   };
 
   let variantOnLowerCase;
@@ -31,7 +31,7 @@ export function ButtonRoot({
   if (variant) {
     variantOnLowerCase = variant.toLowerCase();
   } else {
-    variantOnLowerCase = "filled";
+    variantOnLowerCase = 'filled';
   }
 
   const getButtonType = buttonTypes[variantOnLowerCase];

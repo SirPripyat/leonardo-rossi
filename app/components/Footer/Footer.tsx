@@ -1,15 +1,13 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import leonardoRossiLogoGreen from "../../assets/logo-green.svg";
-import "./Footer.scss";
-import Link from "next/link";
-import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
-import { BiLogoGmail } from "react-icons/bi";
-import { Anchor } from "../Anchor/Anchor";
-import useToggleLanguageText from "@/app/hooks/useToggleText";
-import { pageAnchorsText } from "@/app/texts/pageAnchorsText";
-import { contactsContent } from "@/app/utils/contactsContent";
+import Image from 'next/image';
+import leonardoRossiLogoGreen from '../../assets/logo-green.svg';
+import './Footer.scss';
+import Link from 'next/link';
+import { Anchor } from '../Anchor/Anchor';
+import useToggleLanguageText from '@/app/hooks/useToggleText';
+import { pageAnchorsText } from '@/app/texts/pageAnchorsText';
+import { contactsContent } from '@/app/utils/contactsContent';
 
 export default function Footer() {
   const { text } = useToggleLanguageText(pageAnchorsText);

@@ -1,6 +1,6 @@
-@use "../variables/colors.scss";
-@use "../variables/borderRadius.scss";
-@use "./mixinDisplayFlex.scss";
+@use '../variables/colors.scss';
+@use '../variables/borderRadius.scss';
+@use './mixinDisplayFlex.scss';
 
 @mixin iconButton {
   @include mixinDisplayFlex.rowCenterCenter;

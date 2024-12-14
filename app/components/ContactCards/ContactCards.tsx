@@ -1,6 +1,6 @@
-import { ElementType } from "react";
-import "./ContactCards.scss";
-import Link from "next/link";
+import { ElementType } from 'react';
+import './ContactCards.scss';
+import Link from 'next/link';
 
 export interface ContactCardsProps {
   icon: ElementType;

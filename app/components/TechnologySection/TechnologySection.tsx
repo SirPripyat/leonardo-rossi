@@ -1,26 +1,26 @@
-"use client";
+'use client';
 
-import "./TechnologySection.scss";
-import useToggleTechnologyText from "./useToggleTechnologyText";
-import DataBaseTechnologys from "./SplittedTechs/DataBaseTechnologys";
-import FrontEndTechnologys from "./SplittedTechs/FrontEndTechnologys";
-import BackEndTechnologys from "./SplittedTechs/BackEndTechnologys";
-import Tabs from "../Tabs/Tabs";
+import './TechnologySection.scss';
+import useToggleTechnologyText from './useToggleTechnologyText';
+import DataBaseTechnologys from './SplittedTechs/DataBaseTechnologys';
+import FrontEndTechnologys from './SplittedTechs/FrontEndTechnologys';
+import BackEndTechnologys from './SplittedTechs/BackEndTechnologys';
+import Tabs from '../Tabs/Tabs';
 
 const items = [
   {
     id: 1,
-    name: "Database",
+    name: 'Database',
     children: <DataBaseTechnologys />,
   },
   {
     id: 2,
-    name: "Back-End",
+    name: 'Back-End',
     children: <BackEndTechnologys />,
   },
   {
     id: 3,
-    name: "Front-End",
+    name: 'Front-End',
     children: <FrontEndTechnologys />,
   },
 ];

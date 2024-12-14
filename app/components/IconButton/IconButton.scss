@@ -1,5 +1,5 @@
-@use "../../styles/variables/colors.scss";
-@use "../../styles/mixins/mixinIconButton.scss";
+@use '../../styles/variables/colors.scss';
+@use '../../styles/mixins/mixinIconButton.scss';
 
 .icon-ghosted {
   @include mixinIconButton.iconButton;

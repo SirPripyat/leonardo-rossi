@@ -1,5 +1,5 @@
-import Image from "next/image";
-import "./TechnologyCards.scss";
+import Image from 'next/image';
+import './TechnologyCards.scss';
 
 export interface TechnologyCardsProps {
   image: string;

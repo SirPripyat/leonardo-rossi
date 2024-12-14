@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import useToggleLanguageText from "@/app/hooks/useToggleText";
-import "./AboutMe.scss";
-import { aboutMeText } from "@/app/texts/aboutMeText";
+import useToggleLanguageText from '@/app/hooks/useToggleText';
+import './AboutMe.scss';
+import { aboutMeText } from '@/app/texts/aboutMeText';
 
 export function AboutMe() {
   const {

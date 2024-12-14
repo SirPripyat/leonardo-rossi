@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 interface useExperiencesCardsProps {
   cardIsOpen?: boolean;
@@ -7,7 +7,7 @@ interface useExperiencesCardsProps {
 export default function useExperiencesCards({
   cardIsOpen,
 }: useExperiencesCardsProps) {
-  const [cardOpen, setCardOpen] = useState(cardIsOpen ? true : false);
+  const [cardOpen, setCardOpen] = useState(!!cardIsOpen);
 
   const toggleCardOpen = () => setCardOpen(!cardOpen);
 

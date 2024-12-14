@@ -1,8 +1,8 @@
-@use "../../styles/variables/colors.scss";
-@use "../../styles/variables/paddings.scss";
-@use "../../styles/variables/breakpoints.scss";
-@use "../../styles/variables/spacings.scss";
-@use "../../styles/mixins/mixinDisplayFlex.scss";
+@use '../../styles/variables/colors.scss';
+@use '../../styles/variables/paddings.scss';
+@use '../../styles/variables/breakpoints.scss';
+@use '../../styles/variables/spacings.scss';
+@use '../../styles/mixins/mixinDisplayFlex.scss';
 
 .footer {
   padding: 2.4rem paddings.$padding-display-xs 4rem paddings.$padding-display-xs;

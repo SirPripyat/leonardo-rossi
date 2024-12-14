@@ -1,4 +1,4 @@
-import { LanguageType } from "../types/language";
+import { LanguageType } from '../types/language';
 
 type MainBannerText = {
   [key in LanguageType]: {
@@ -11,18 +11,18 @@ type MainBannerText = {
 };
 
 export const mainBannerText: MainBannerText = {
-  "pt-br": {
-    apresentation: "Olá, eu sou o",
-    name: "<Leonardo Rossi/>",
-    profession: "// Desenvolvedor FullStack",
-    primaryButton: "Ver currículo",
-    secondaryButton: "Contatos",
+  'pt-br': {
+    apresentation: 'Olá, eu sou o',
+    name: '<Leonardo Rossi/>',
+    profession: '// Desenvolvedor FullStack',
+    primaryButton: 'Ver currículo',
+    secondaryButton: 'Contatos',
   },
-  "us-en": {
+  'us-en': {
     apresentation: "Hello, I'm",
-    name: "<Leonardo Rossi/>",
-    profession: "// FullStack Developer",
-    primaryButton: "See resume",
-    secondaryButton: "Contacts",
+    name: '<Leonardo Rossi/>',
+    profession: '// FullStack Developer',
+    primaryButton: 'See resume',
+    secondaryButton: 'Contacts',
   },
 };

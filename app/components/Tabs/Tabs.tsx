@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import React from "react";
-import "./Tabs.scss";
-import useTabs from "./useTabs";
+import React from 'react';
+import './Tabs.scss';
+import useTabs from './useTabs';
 
 type TabsProps = {
   items: {
@@ -33,7 +33,7 @@ export default function Tabs({ items }: TabsProps) {
           ({ id, children }) =>
             activeTab === id && (
               <React.Fragment key={id}>{children}</React.Fragment>
-            )
+            ),
         )}
       </div>
     </div>

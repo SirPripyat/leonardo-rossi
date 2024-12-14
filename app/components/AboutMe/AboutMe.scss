@@ -1,6 +1,6 @@
-@use "../../styles/variables/colors.scss";
-@use "../../styles/variables/spacings.scss";
-@use "../../styles/mixins/mixinDisplayFlex.scss";
+@use '../../styles/variables/colors.scss';
+@use '../../styles/variables/spacings.scss';
+@use '../../styles/mixins/mixinDisplayFlex.scss';
 
 .about-me__title {
   color: colors.$branding-color-250;

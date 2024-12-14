@@ -1,7 +1,7 @@
-@use "../../styles/variables/colors.scss";
-@use "../../styles/variables/breakpoints.scss";
-@use "../../styles/variables/spacings.scss";
-@use "../../styles/mixins/mixinDisplayFlex.scss";
+@use '../../styles/variables/colors.scss';
+@use '../../styles/variables/breakpoints.scss';
+@use '../../styles/variables/spacings.scss';
+@use '../../styles/mixins/mixinDisplayFlex.scss';
 
 .contacts__title {
   color: colors.$branding-color-250;

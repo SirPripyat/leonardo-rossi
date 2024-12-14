@@ -1,1 +1,1 @@
-export type ProgrammingRole = "Front-End" | "Back-End" | "FullStack";
+export type ProgrammingRole = 'Front-End' | 'Back-End' | 'FullStack';

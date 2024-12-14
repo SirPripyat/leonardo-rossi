@@ -1,9 +1,9 @@
-@use "../../styles/variables/colors.scss";
-@use "../../styles/variables/shadows.scss";
-@use "../../styles/variables/spacings.scss";
-@use "../../styles/mixins/mixinButton.scss";
-@use "../../styles/mixins/mixinFonts.scss";
-@use "../../styles/variables/breakpoints.scss";
+@use '../../styles/variables/colors.scss';
+@use '../../styles/variables/shadows.scss';
+@use '../../styles/variables/spacings.scss';
+@use '../../styles/mixins/mixinButton.scss';
+@use '../../styles/mixins/mixinFonts.scss';
+@use '../../styles/variables/breakpoints.scss';
 
 .reset-button {
   background-color: transparent;

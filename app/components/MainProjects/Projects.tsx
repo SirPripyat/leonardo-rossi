@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import "./Projects.scss";
-import { ProjectCards } from "../ProjectCards/ProjectCards";
-import useToggleLanguageText from "@/app/hooks/useToggleText";
-import { projectText } from "@/app/texts/projectsText";
+import './Projects.scss';
+import { ProjectCards } from '../ProjectCards/ProjectCards';
+import useToggleLanguageText from '@/app/hooks/useToggleText';
+import { projectText } from '@/app/texts/projectsText';
 
 export function Projects() {
   const {

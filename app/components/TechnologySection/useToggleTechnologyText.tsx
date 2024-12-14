@@ -1,5 +1,5 @@
-import { LanguageContext } from "@/app/context/languageContext/LanguageContext";
-import { useCallback, useContext, useEffect, useState } from "react";
+import { LanguageContext } from '@/app/context/languageContext/LanguageContext';
+import { useCallback, useContext, useEffect, useState } from 'react';
 
 type TechnologyText = {
   title: string;
@@ -7,20 +7,20 @@ type TechnologyText = {
 
 export default function useToggleTechnologyText() {
   const [technologyText, setTechnologyText] = useState<TechnologyText>(
-    {} as TechnologyText
+    {} as TechnologyText,
   );
 
   const { language } = useContext(LanguageContext);
 
   const toggleTechnologyText = useCallback(() => {
-    if (language === "pt-br")
+    if (language === 'pt-br')
       return setTechnologyText({
-        title: "Tecnologias",
+        title: 'Tecnologias',
       });
 
-    if (language === "us-en")
+    if (language === 'us-en')
       return setTechnologyText({
-        title: "Technologies",
+        title: 'Technologies',
       });
   }, [language]);
 

@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import useToggleLanguageText from "@/app/hooks/useToggleText";
-import ExperiencesCards from "../ExperiencesCards/ExperiencesCards";
-import "./Experiences.scss";
-import { experiencesText } from "@/app/texts/experiencesText";
+import useToggleLanguageText from '@/app/hooks/useToggleText';
+import ExperiencesCards from '../ExperiencesCards/ExperiencesCards';
+import './Experiences.scss';
+import { experiencesText } from '@/app/texts/experiencesText';
 
 export default function Experiences() {
   const { text } = useToggleLanguageText(experiencesText);

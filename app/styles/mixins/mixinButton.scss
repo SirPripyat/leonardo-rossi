@@ -1,8 +1,8 @@
-@use "../variables/colors.scss";
-@use "../variables/spacings.scss";
-@use "../variables/borderRadius.scss";
-@use "../mixins/mixinFonts.scss";
-@use "./mixinDisplayFlex.scss";
+@use '../variables/colors.scss';
+@use '../variables/spacings.scss';
+@use '../variables/borderRadius.scss';
+@use '../mixins/mixinFonts.scss';
+@use './mixinDisplayFlex.scss';
 
 @mixin button {
   @include mixinDisplayFlex.rowCenterCenter;

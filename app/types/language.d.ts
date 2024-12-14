@@ -1,1 +1,1 @@
-export type LanguageType = "pt-br" | "us-en";
+export type LanguageType = 'pt-br' | 'us-en';

@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import Image, { StaticImageData } from "next/image";
-import { IconButton } from "../IconButton/IconButton";
-import { ChevronDown, ChevronUp } from "lucide-react";
-import "./ExperiencesCards.scss";
-import useExperiencesCards from "./useExperiencesCards";
+import Image, { StaticImageData } from 'next/image';
+import { IconButton } from '../IconButton/IconButton';
+import { ChevronDown, ChevronUp } from 'lucide-react';
+import './ExperiencesCards.scss';
+import useExperiencesCards from './useExperiencesCards';
 
 interface ExperiencesCardsProps {
   companyImage: StaticImageData;

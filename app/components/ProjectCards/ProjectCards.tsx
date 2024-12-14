@@ -1,10 +1,10 @@
-import { Eye } from "lucide-react";
-import { RxGithubLogo } from "react-icons/rx";
-import { Button } from "../Button";
-import "./ProjectCards.scss";
-import Image from "next/image";
-import useToggleButtonsText from "./useToggleButtonsText";
-import { ProjectsText as ProjectCardsProps } from "@/app/types/projectsText";
+import { Eye } from 'lucide-react';
+import { RxGithubLogo } from 'react-icons/rx';
+import { Button } from '../Button';
+import './ProjectCards.scss';
+import Image from 'next/image';
+import useToggleButtonsText from './useToggleButtonsText';
+import { ProjectsText as ProjectCardsProps } from '@/app/types/projectsText';
 
 export function ProjectCards({
   link,
@@ -28,14 +28,14 @@ export function ProjectCards({
           <p>{description}</p>
         </div>
         <div className="information__buttons-area">
-          <Button.Root variant={"Filled"} link={link} targetValue={"_blank"}>
+          <Button.Root variant={'Filled'} link={link} targetValue={'_blank'}>
             <Button.Icon icon={Eye} />
             {mainButton}
           </Button.Root>
           <Button.Root
-            variant={"Outlined"}
+            variant={'Outlined'}
             link={githubLink}
-            targetValue={"_blank"}
+            targetValue={'_blank'}
           >
             <Button.Icon icon={RxGithubLogo} />
             {secondaryButton}

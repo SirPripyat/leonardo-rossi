@@ -1,6 +1,6 @@
-import { IconType } from "react-icons";
-import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
-import { BiLogoGmail } from "react-icons/bi";
+import { IconType } from 'react-icons';
+import { RxGithubLogo, RxLinkedinLogo } from 'react-icons/rx';
+import { BiLogoGmail } from 'react-icons/bi';
 
 type ContactsContent = {
   name: string;
@@ -10,18 +10,18 @@ type ContactsContent = {
 
 export const contactsContent: ContactsContent[] = [
   {
-    name: "LinkedIn",
+    name: 'LinkedIn',
     icon: RxLinkedinLogo,
-    link: "https://www.linkedin.com/in/rafael-ramos-oliveira/",
+    link: 'https://www.linkedin.com/in/rafael-ramos-oliveira/',
   },
   {
-    name: "Github",
+    name: 'Github',
     icon: RxGithubLogo,
-    link: "https://github.com/SirPripyat",
+    link: 'https://github.com/SirPripyat',
   },
   {
-    name: "Gmail",
+    name: 'Gmail',
     icon: BiLogoGmail,
-    link: "mailto:08.leo.rossi@gmail.com",
+    link: 'mailto:08.leo.rossi@gmail.com',
   },
 ];

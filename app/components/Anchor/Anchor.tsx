@@ -1,5 +1,5 @@
-import Link from "next/link";
-import "./Anchor.scss";
+import Link from 'next/link';
+import './Anchor.scss';
 
 export interface AnchorProps {
   link: string;

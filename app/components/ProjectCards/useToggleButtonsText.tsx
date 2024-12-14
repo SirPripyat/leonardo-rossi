@@ -1,8 +1,8 @@
-import { LanguageContext } from "@/app/context/languageContext/LanguageContext";
-import { useCallback, useContext, useEffect, useState } from "react";
+import { LanguageContext } from '@/app/context/languageContext/LanguageContext';
+import { useCallback, useContext, useEffect, useState } from 'react';
 
-type MainButton = "Ver projeto" | "See project";
-type SecondaryButton = "Ver GitHub" | "See GitHub";
+type MainButton = 'Ver projeto' | 'See project';
+type SecondaryButton = 'Ver GitHub' | 'See GitHub';
 
 type ButtonsText = {
   mainButton: MainButton;
@@ -11,22 +11,22 @@ type ButtonsText = {
 
 export default function useToggleButtonsText() {
   const [buttonsText, setButtonsText] = useState<ButtonsText>(
-    {} as ButtonsText
+    {} as ButtonsText,
   );
 
   const { language } = useContext(LanguageContext);
 
   const toggleButtonsText = useCallback(() => {
-    if (language === "pt-br")
+    if (language === 'pt-br')
       return setButtonsText({
-        mainButton: "Ver projeto",
-        secondaryButton: "Ver GitHub",
+        mainButton: 'Ver projeto',
+        secondaryButton: 'Ver GitHub',
       });
 
-    if (language === "us-en")
+    if (language === 'us-en')
       return setButtonsText({
-        mainButton: "See project",
-        secondaryButton: "See GitHub",
+        mainButton: 'See project',
+        secondaryButton: 'See GitHub',
       });
   }, [language]);
 

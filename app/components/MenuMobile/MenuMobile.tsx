@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { X } from "lucide-react";
-import "./MenuMobile.scss";
-import { IconButton } from "../IconButton/IconButton";
-import { Button } from "../Button";
-import { useMenuMobileStore } from "@/app/store/menuMobile";
-import useToggleLanguageText from "@/app/hooks/useToggleText";
-import { pageAnchorsText } from "@/app/texts/pageAnchorsText";
+import { X } from 'lucide-react';
+import './MenuMobile.scss';
+import { IconButton } from '../IconButton/IconButton';
+import { Button } from '../Button';
+import { useMenuMobileStore } from '@/app/store/menuMobile';
+import useToggleLanguageText from '@/app/hooks/useToggleText';
+import { pageAnchorsText } from '@/app/texts/pageAnchorsText';
 
 export function MenuMobile() {
   const { menuMobileIsOpen, toggleMenuMobile } = useMenuMobileStore();
@@ -21,7 +21,7 @@ export function MenuMobile() {
           {text.map(({ label, link }, index) => (
             <Button.Root
               key={index}
-              variant={"Ghosted"}
+              variant={'Ghosted'}
               clickAction={toggleMenuMobile}
               link={link}
             >

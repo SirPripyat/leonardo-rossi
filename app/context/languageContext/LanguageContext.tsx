@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { LanguageType } from "@/app/types/language";
-import { createContext, useState } from "react";
+import { LanguageType } from '@/app/types/language';
+import { createContext, useState } from 'react';
 
 type LanguageContextType = {
   language: LanguageType;
@@ -9,11 +9,11 @@ type LanguageContextType = {
 };
 
 const LanguageContext = createContext<LanguageContextType>(
-  {} as LanguageContextType
+  {} as LanguageContextType,
 );
 
 const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
-  const [language, setLanguage] = useState<LanguageType>("pt-br");
+  const [language, setLanguage] = useState<LanguageType>('pt-br');
 
   const setLanguageOnClick = (language: LanguageType): void =>
     setLanguage(language);
