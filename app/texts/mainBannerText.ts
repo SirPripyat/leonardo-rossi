@@ -14,14 +14,14 @@ export const mainBannerText: MainBannerText = {
   'pt-br': {
     apresentation: 'Olá, eu sou o',
     name: '<Leonardo Rossi/>',
-    profession: '// Desenvolvedor FullStack',
+    profession: '// Engenheiro de Software',
     primaryButton: 'Ver currículo',
     secondaryButton: 'Contatos',
   },
   'us-en': {
     apresentation: "Hello, I'm",
     name: '<Leonardo Rossi/>',
-    profession: '// FullStack Developer',
+    profession: '// Software Engineer',
     primaryButton: 'See resume',
     secondaryButton: 'Contacts',
   },

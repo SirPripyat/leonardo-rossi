@@ -2,26 +2,32 @@
 
 import './TechnologySection.scss';
 import useToggleTechnologyText from './useToggleTechnologyText';
-import DataBaseTechnologys from './SplittedTechs/DataBaseTechnologys';
-import FrontEndTechnologys from './SplittedTechs/FrontEndTechnologys';
-import BackEndTechnologys from './SplittedTechs/BackEndTechnologys';
+import DataBaseTechnologies from './SplittedTechs/DataBaseTechnologies';
+import FrontEndTechnologies from './SplittedTechs/FrontEndTechnologies';
+import BackEndTechnologies from './SplittedTechs/BackEndTechnologies';
 import Tabs from '../Tabs/Tabs';
+import MobileTechnologies from '@/app/components/TechnologySection/SplittedTechs/MobileTechnologies';
 
 const items = [
   {
     id: 1,
     name: 'Database',
-    children: <DataBaseTechnologys />,
+    children: <DataBaseTechnologies />,
   },
   {
     id: 2,
     name: 'Back-End',
-    children: <BackEndTechnologys />,
+    children: <BackEndTechnologies />,
   },
   {
     id: 3,
     name: 'Front-End',
-    children: <FrontEndTechnologys />,
+    children: <FrontEndTechnologies />,
+  },
+  {
+    id: 4,
+    name: 'Mobile',
+    children: <MobileTechnologies />,
   },
 ];
 

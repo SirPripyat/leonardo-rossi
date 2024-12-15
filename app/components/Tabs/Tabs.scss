@@ -3,7 +3,7 @@
 @use '../../styles/variables/breakpoints.scss';
 @use '../../styles/mixins/mixinFonts.scss';
 
-.technologys-tabs {
+.technologies-tabs {
   width: 100%;
 
   display: flex;
@@ -13,7 +13,7 @@
   gap: spacings.$spacing-md;
 }
 
-.technologys-tabs__tabs-top {
+.technologies-tabs__tabs-top {
   display: flex;
   justify-content: center;
   align-items: start;
@@ -51,7 +51,7 @@
   }
 }
 
-.technologys-tabs__tabs-content {
+.technologies-tabs__tabs-content {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 2fr));
   gap: spacings.$spacing-sm;
@@ -60,25 +60,25 @@
 }
 
 @media (min-width: breakpoints.$breakpoint-sm) {
-  .technologys-tabs__tabs-content {
+  .technologies-tabs__tabs-content {
     grid-template-columns: repeat(3, minmax(0, 2fr));
   }
 }
 
 @media (min-width: breakpoints.$breakpoint-md) {
-  .technologys-tabs__tabs-content {
+  .technologies-tabs__tabs-content {
     grid-template-columns: repeat(4, minmax(0, 2fr));
   }
 }
 
 @media (min-width: breakpoints.$breakpoint-lg) {
-  .technologys-tabs__tabs-content {
+  .technologies-tabs__tabs-content {
     grid-template-columns: repeat(5, minmax(0, 2fr));
   }
 }
 
 @media (min-width: breakpoints.$breakpoint-xl) {
-  .technologys-tabs__tabs-content {
+  .technologies-tabs__tabs-content {
     grid-template-columns: repeat(7, minmax(0, 2fr));
   }
 }

@@ -12,14 +12,14 @@ export const pageAnchorsText: PageAnchorsText = {
     { label: 'Sobre Mim', link: '#aboutMe' },
     { label: 'Experiências', link: '#experiences' },
     { label: 'Tecnologias', link: '#technology' },
-    { label: 'Projetos', link: '#projects' },
+    // { label: 'Projetos', link: '#projects' },
     { label: 'Contatos', link: '#contacts' },
   ],
   'us-en': [
     { label: 'About Me', link: '#aboutMe' },
     { label: 'Experiences', link: '#experiences' },
     { label: 'Technologies', link: '#technology' },
-    { label: 'Projects', link: '#projects' },
+    // { label: 'Projects', link: '#projects' },
     { label: 'Contacts', link: '#contacts' },
   ],
 };

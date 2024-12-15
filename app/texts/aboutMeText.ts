@@ -3,21 +3,21 @@ import { LanguageType } from '@/app/types/language';
 type AboutMeText = {
   [key in LanguageType]: {
     title: string;
-    phragraphs: string[];
+    paragraph: string[];
   };
 };
 
 export const aboutMeText: AboutMeText = {
   'pt-br': {
     title: 'Sobre mim',
-    phragraphs: [
-      'Sou um estudante proativo de engenharia de software na Unicesumar. Minha especialização está em desenvolvimento full-stack, com foco em tecnologias front-end, especialmente NodeJS, ReactJS e NextJS. Possuo experiência prática na criação de interfaces de usuário dinâmicas e responsivas. Atualmente, estou ampliando meu conjunto de habilidades ao explorar Java com SpringBoot para o desenvolvimento de backend e Angular para o front-end. Minha paixão pela tecnologia e meu compromisso em permanecer na vanguarda das tendências da indústria impulsionam minha jornada contínua de aprendizado.',
+    paragraph: [
+      'Sou um engenheiro de software apaixonado por enfrentar novos desafios e adquirir conhecimento em diversas áreas. Acredito que um desenvolvedor deve ser um camaleão, adaptando-se às necessidades de diferentes projetos e suas regras de negócio. Com um ano e meio de experiência em UX Design, pude aprimorar minha compreensão das tecnologias de Front-End.  Atualmente, meu foco principal é o desenvolvimento back-end, utilizando tecnologias como Java, Spring Boot, React e Angular no meu dia a dia.',
     ],
   },
   'us-en': {
     title: 'About me',
-    phragraphs: [
-      "I'm a proactive software engineering student at Unicesumar. My expertise lies in full-stack development with a focus on front-end technologies, particularly NodeJS, ReactJS, and NextJS. I have hands-on experience in crafting dynamic and responsive user interfaces. Currently, I'm expanding my skill set by delving into Java with SpringBoot for backend development and Angular for front-end. My passion for technology and commitment to staying at the forefront of industry trends drive my continuous learning journey.",
+    paragraph: [
+      'I am a software engineer passionate about facing new challenges and acquiring knowledge in various areas. I believe that a developer should be a chameleon, adapting to the needs of different projects and their business rules. With a year and a half of experience in UX Design, I have been able to enhance my understanding of Front-End technologies. Currently, my main focus is on back-end development, using technologies such as Java, Spring Boot, React, and Angular in my daily work.',
     ],
   },
 };

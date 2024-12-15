@@ -16,8 +16,8 @@ export default function Tabs({ items }: TabsProps) {
   const { activeTab, thisTabIsActive, setActiveTabOnClick } = useTabs();
 
   return (
-    <div className="technologys-tabs">
-      <div className="technologys-tabs__tabs-top">
+    <div className="technologies-tabs">
+      <div className="technologies-tabs__tabs-top">
         {items.map(({ id, name }) => (
           <button
             key={id}
@@ -28,7 +28,7 @@ export default function Tabs({ items }: TabsProps) {
           </button>
         ))}
       </div>
-      <div className="technologys-tabs__tabs-content">
+      <div className="technologies-tabs__tabs-content">
         {items.map(
           ({ id, children }) =>
             activeTab === id && (
